@@ -43,7 +43,6 @@ function formatDate(timestamp) {
   }
   function search(city) {
     const apiKey = "1adc539812270320dcf2ee9860cbdb06";
-    //const city = "Paris";
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(displayTemperature);
   }
