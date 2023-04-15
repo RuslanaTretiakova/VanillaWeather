@@ -58,6 +58,14 @@ body {
     color: rgb(32, 33, 36);
     letter-spacing: normal;
   }
+  .temperature .active {
+    color: rgb(112, 117, 122);
+    cursor: default;
+  }
+  .temperature .active:hover {
+    text-decoration: none;
+  }
+  
   .units {
     position: relative;
     font-size: 14px;
@@ -103,4 +111,3 @@ body {
     font-size: 12px;
     cursor: pointer;
   }
-  
