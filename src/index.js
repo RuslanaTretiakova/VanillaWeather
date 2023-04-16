@@ -70,8 +70,7 @@ function formatDate(timestamp) {
     const tempElement = document.querySelector("#city-temp");
     tempElement.innerHTML = Math.round(celsiusTemperature);
   }
-  const celsiusTemperature = null;
- 
+
   const formControl = document.querySelector("#search-form");
   formControl.addEventListener("submit", showCity);
 
@@ -80,4 +79,5 @@ function formatDate(timestamp) {
 
   const celsiusLink = document.querySelector("#celsius-link");
   celsiusLink.addEventListener("click", showCelsiusTemp);
+  
    search("London");
