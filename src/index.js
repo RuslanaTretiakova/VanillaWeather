@@ -38,10 +38,12 @@ function formatDate(timestamp) {
     windElement.innerHTML = Math.round(response.data.wind.speed);
     dateElement.innerHTML = formatDate(response.data.dt * 1000);
     imgElement.setAttribute(
-      "src",
+      "src", 
       `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
-    );
-    imgElement.setAttribute("alt", response.data.weather[0].description);
+      );
+    imgElement.setAttribute(
+      "alt", response.data.weather[0].description
+      );
   }
   function search(city) {
     const apiKey = "1adc539812270320dcf2ee9860cbdb06";
