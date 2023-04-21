@@ -2,7 +2,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
   }
   .container {
-    margin-top: 50px;
+    margin-top: 60px;
   }
   .weather-app {
     display: block;
@@ -43,9 +43,9 @@ body {
   .weather-icon {
     display: inline-block;
     height: 60px;
-    margin-top: 0px;
+    margin-top: -5px;
     width: 60px;
-    margin-left: 15px;
+    margin-left: -10px;
   }
   .temperature {
     display: inline-block;
@@ -110,4 +110,49 @@ body {
     color: rgb(112, 117, 122);
     font-size: 12px;
     cursor: pointer;
+  }
+  .weather-forecast-container {
+    margin: 0 auto;
+  }
+  .forecast-border {
+    display: block;
+    text-align: center;
+    padding: 22px;
+    border: #dadde1;
+    border-radius: 10px;
+    max-width: auto;
+    max-width: auto;
+    cursor: pointer;
+  }
+  .forecast-border:hover {
+  background-color: #F8F9FA;
+  }
+  .forecast-weekday {
+    display: block;
+    text-align: center;
+    padding: 7px;
+    font-size: 16px;
+    line-height: 15px;
+    font-weight: 400;
+    color: rgb(32, 33, 36);
+  }
+  .forecast-icon {
+   text-align: center;  
+  }
+  .forecast-temperatures {
+    display: inline-flex;
+    width: auto;
+    height: auto;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .forecast-temperature-max, .forecast-temperature-min {
+     text-align: center;
+     padding: 3px;
+  }
+  .forecast-temperature-max {
+    color: rgb(32, 33, 36); 
+  }
+  .forecast-temperature-min {
+    color: rgb(112, 117, 122);
   }
